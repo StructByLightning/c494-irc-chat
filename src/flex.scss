@@ -1,0 +1,36 @@
+.flexr {
+  display: flex;
+  flex-shrink: 0;
+
+  flex-direction: row;
+
+  &.hcenter {
+    justify-content: center;
+  }
+  &.hbetween {
+    justify-content: space-between;
+  }
+
+  &.hmargins {
+    > :not(:first-child) {
+      margin-left: 0.25rem;
+    }
+    > :not(:last-child) {
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+.flexc {
+  display: flex;
+
+  flex-shrink: 0;
+  flex-direction: column;
+
+  &.hcenter {
+    align-items: center;
+  }
+  &.hbetween {
+    align-items: space-between;
+  }
+}

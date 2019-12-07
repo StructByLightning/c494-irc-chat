@@ -1,0 +1,75 @@
+.code {
+  .title {
+    background: var(--gray-2);
+    color: white;
+    padding-top: var(--spacing-2);
+    padding-bottom: var(--spacing-2);
+    padding-left: var(--spacing-2);
+    font-family: Philosopher;
+    font-size: var(--font-size-2);
+    margin-bottom: var(--spacing-1);
+  }
+
+  code,
+  pre {
+    background-color: transparent !important;
+    margin: 0;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  pre {
+    padding: var(--spacing-2) !important;
+  }
+  &.block {
+    background: var(--gray-30);
+    border: 0;
+    border-left: 3px solid var(--gray-2);
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: var(--font-size-0);
+    page-break-inside: avoid;
+
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+      "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+      "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+      monospace;
+
+    &.wrap {
+      white-space: pre-wrap;
+    }
+
+    &.lang-txt {
+      * {
+        color: var(--gray-2);
+      }
+    }
+
+    .react-syntax-highlighter-line-number {
+      color: var(--gray-7) !important;
+      margin-right: var(--spacing-5);
+      margin-left: var(--spacing-2);
+    }
+  }
+
+  &.inline {
+    pre {
+      display: inline-flex !important;
+      font-size: 1rem;
+      padding-bottom: 0;
+    }
+
+    background: lightgray;
+    border: 0;
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-flex;
+    overflow-x: unset;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}

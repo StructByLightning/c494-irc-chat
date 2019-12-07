@@ -1,0 +1,116 @@
+.current-room {
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-6);
+  flex-basis: 0;
+  flex-grow: var(--flex-base);
+  flex-shrink: var(--flex-base);
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+
+  .messager {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: var(--flex-base);
+    flex-shrink: var(--flex-base);
+    justify-content: space-between;
+    .header {
+      margin-bottom: var(--spacing-4);
+    }
+  }
+
+  .message-sender {
+    margin: var(--spacing-4);
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    .input {
+      flex-grow: 1;
+    }
+  }
+
+  .clients {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: var(--flex-3);
+    flex-shrink: var(--flex-3);
+    background-color: var(--gray-5);
+    overflow-y: hidden;
+    padding-bottom: var(--spacing-8);
+
+    &:hover {
+      overflow-y: overlay;
+    }
+
+    .entry {
+      font-size: var(--font-size-2);
+      line-height: var(--line-height-short-2);
+      white-space: nowrap;
+      cursor: pointer;
+      padding-left: var(--spacing-4);
+      padding-right: var(--spacing-4);
+      padding-top: var(--spacing-4);
+      padding-bottom: var(--spacing-4);
+      flex-shrink: 0;
+
+      &:hover {
+        background: #424242;
+      }
+    }
+
+    .button {
+      margin-left: var(--spacing-4);
+      margin-right: var(--spacing-4);
+    }
+  }
+
+  .messages {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+
+    &:hover {
+      overflow-y: overlay;
+    }
+
+    .message-aggregate {
+      flex-shrink: 0;
+      padding-top: var(--spacing-6);
+      padding-bottom: var(--spacing-6);
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--gray-16);
+      }
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: var(--spacing-1);
+
+        .owner-name {
+          font-size: var(--font-size-2);
+          font-weight: var(--weight-4);
+          margin-right: var(--spacing-3);
+          line-height: 0.95em;
+        }
+        .timestamp {
+          font-size: var(--font-size-1);
+          color: var(--gray-25);
+        }
+      }
+    }
+  }
+}

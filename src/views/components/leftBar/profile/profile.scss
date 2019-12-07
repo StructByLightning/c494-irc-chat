@@ -1,0 +1,20 @@
+.profile {
+  flex-shrink: 0;
+  padding: var(--spacing-4);
+  background: var(--gray-2);
+
+  .username {
+    font-weight: var(--weight-4);
+  }
+
+  .id {
+    font-size: var(--font-size-0);
+    line-height: 1em;
+    color: var(--gray-17);
+  }
+}
+
+.misc-links {
+  padding: var(--spacing-4);
+  background: var(--gray-3);
+}

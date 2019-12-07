@@ -1,0 +1,51 @@
+.homework-header {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid var(--gray-2);
+  background: var(--gray-29);
+  justify-content: space-between;
+  margin-bottom: var(--spacing-6);
+  font-family: "Oswald", serif;
+  font-size: var(--font-size-2);
+
+  .hh-strong {
+    font-weight: 800;
+    display: inline-block;
+  }
+
+  .hh-thin {
+    font-weight: 100;
+    display: inline-block;
+  }
+
+  .hh-subheader {
+    margin: var(--spacing-3);
+    display: flex;
+    flex-direction: column;
+
+    &.hh-right {
+      align-items: flex-end;
+    }
+
+    &.hh-middle {
+      justify-content: center;
+
+      .hh-title {
+        display: flex;
+        justify-content: center;
+        font-size: var(--font-size-6);
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 1em;
+      }
+
+      .hh-subtitle {
+        display: flex;
+        justify-content: center;
+        font-size: var(--font-size-2);
+        font-style: italic;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+:root {
+  --border-hover-fg: #0c8343;
+  --border-basic-fg: #7a7a7a;
+  --border-focus-fg: #39efc1;
+  --border-active-fg: #39efc1;
+
+  --danger-basic-fg: #ff7575;
+  --danger-hover-fg: #eb0000;
+  --danger-active-fg: #c20000;
+
+  --gray-1: #080808;
+  --gray-2: #0f0f0f;
+  --gray-3: #171717;
+  --gray-4: #1f1f1f;
+  --gray-5: #262626;
+  --gray-6: #2e2e2e;
+  --gray-7: #363636;
+  --gray-8: #3d3d3d;
+  --gray-9: #454545;
+  --gray-10: #4d4d4d;
+  --gray-11: #545454;
+  --gray-12: #5c5c5c;
+  --gray-13: #636363;
+  --gray-14: #6b6b6b;
+  --gray-15: #737373;
+  --gray-16: #7a7a7a;
+  --gray-17: #828282;
+  --gray-18: #8a8a8a;
+  --gray-19: #919191;
+  --gray-20: #999999;
+  --gray-21: #a1a1a1;
+  --gray-22: #a8a8a8;
+  --gray-23: #b0b0b0;
+  --gray-24: #b8b8b8;
+  --gray-25: #bfbfbf;
+  --gray-26: #c7c7c7;
+  --gray-27: #cfcfcf;
+  --gray-28: #d6d6d6;
+  --gray-29: #dedede;
+  --gray-30: #e6e6e6;
+  --gray-31: #ededed;
+  --gray-32: #f5f5f5;
+
+  --space-tiny: 0.391rem;
+  --space-small: 0.625rem;
+  --space-medium: 1rem;
+  --space-large: 1.6rem;
+  --space-huge: 2.56rem;
+
+  //apply these to the component you want to be small (the sidebar)
+  //the other component should be 1
+  --flex-base: 1;
+  --flex-1: 0.62; //1/(1.61^1)
+  --flex-2: 0.38; //1/(1.61^2)
+  --flex-3: 0.23; //1/(1.61^3)
+  --flex-4: 0.14; //1/(1.61^4)
+  --flex-5: 0.09; //1/(1.61^5)
+
+  //
+  --spacing-1: 0.146rem; //1/1.61^4
+  --spacing-2: 0.236rem; //1/1.61^3
+  --spacing-3: 0.382rem; //1/1.61^2
+  --spacing-4: 0.618rem; //1/1.61^1
+  --spacing-5: 1rem;
+  --spacing-6: 1.618rem; //1*1.61^1
+  --spacing-7: 2.618rem; //1*1.61^2
+  --spacing-8: 4.235rem; //1*1.61^3
+  --spacing-9: 6.854rem; //1*1.61^4
+
+  //font-weights
+  --weight-1: 154;
+  --weight-2: 248;
+  --weight-3: 400;
+  --weight-4: 644;
+  --weight-5: 1000;
+
+  //font sizes
+  //line-height varies based on both font-size and content widht
+  //short = 1/4 of screen
+  //medium = 1/2 of screen
+  //long = full screen
+  --font-size-0: 0.625rem;
+  --font-size-1: 0.8125rem;
+  --font-size-2: 1rem;
+  --font-size-3: 1.25rem;
+  --font-size-4: 1.625rem;
+  --font-size-5: 2.0625rem;
+  --font-size-6: 2.625rem;
+
+  @media (max-width: 200000px) {
+    --line-height-short-1: 1.375rem;
+    --line-height-short-2: 1.6875rem;
+    --line-height-short-3: 2rem;
+    --line-height-short-4: 2.5625rem;
+    --line-height-short-5: 3.1875rem;
+    --line-height-medium-1: 1.625rem;
+    --line-height-medium-2: 1.875rem;
+    --line-height-medium-3: 2.25rem;
+    --line-height-medium-4: 2.75rem;
+    --line-height-medium-5: 3.375rem;
+    --line-height-long-1: 3.8125rem;
+    --line-height-long-2: 3.1875rem;
+    --line-height-long-3: 2.6875rem;
+    --line-height-long-4: 2.3125rem;
+    --line-height-long-5: 2.0625rem;
+  }
+
+  @media (max-width: 1500px) {
+    --line-height-short-1: 1.3125rem;
+    --line-height-short-2: 1.625rem;
+    --line-height-short-3: 1.9375rem;
+    --line-height-short-4: 2.5rem;
+    --line-height-short-5: 3.125rem;
+    --line-height-medium-1: 1.5rem;
+    --line-height-medium-2: 1.75rem;
+    --line-height-medium-3: 2.125rem;
+    --line-height-medium-4: 2.6875rem;
+    --line-height-medium-5: 3.3125rem;
+    --line-height-long-1: 1.8125rem;
+    --line-height-long-2: 2.0625rem;
+    --line-height-long-3: 2.4375rem;
+    --line-height-long-4: 3rem;
+    --line-height-long-5: 3.625rem;
+  }
+  @media (max-width: 1000px) {
+    --line-height-short-1: 1.25rem;
+    --line-height-short-2: 1.5625rem;
+    --line-height-short-3: 1.9375rem;
+    --line-height-short-4: 2.4375rem;
+    --line-height-short-5: 3.0625rem;
+    --line-height-medium-1: 1.375rem;
+    --line-height-medium-2: 1.6875rem;
+    --line-height-medium-3: 2rem;
+    --line-height-medium-4: 2.5625rem;
+    --line-height-medium-5: 3.1875rem;
+    --line-height-long-1: 1.625rem;
+    --line-height-long-2: 1.875rem;
+    --line-height-long-3: 2.25rem;
+    --line-height-long-4: 2.75rem;
+    --line-height-long-5: 3.375rem;
+  }
+  @media (max-width: 500px) {
+    --line-height-short-1: 1.25rem;
+    --line-height-short-2: 1.5rem;
+    --line-height-short-3: 1.875rem;
+    --line-height-short-4: 2.375rem;
+    --line-height-short-5: 3.0625rem;
+    --line-height-medium-1: 1.25rem;
+    --line-height-medium-2: 1.5625rem;
+    --line-height-medium-3: 1.875rem;
+    --line-height-medium-4: 2.4375rem;
+    --line-height-medium-5: 3.0625rem;
+    --line-height-long-1: 1.375rem;
+    --line-height-long-2: 1.625rem;
+    --line-height-long-3: 2rem;
+    --line-height-long-4: 2.5625rem;
+    --line-height-long-5: 3.1875rem;
+  }
+}
